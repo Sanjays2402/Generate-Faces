@@ -1,39 +1,54 @@
-# Project-Face-Generation-Udacity
-This is the fourth project of Udacity's Deep Learning Nanodegree Program (Using a DCGAN on the CelebA dataset to generate images of new and realistic human faces.)
+# 🧑 Generate Faces — DCGAN
 
-# Project Overview: Face Generation using DCGAN
-In this project, I have defined and trained a DCGAN on a dataset of faces. My goal was to  get a generator network to generate new images of faces that look as realistic as possible! Similar to this https://www.thispersondoesnotexist.com/
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat&logo=pytorch&logoColor=white)
 
-At the end of the project, I was able to visualize the results of my trained Generator to see how it performsed; my generated samples looked like fairly realistic faces with small amounts of noise.
+Generate new, realistic human faces using a **Deep Convolutional Generative Adversarial Network (DCGAN)** trained on the CelebA dataset. Part of the **Udacity Deep Learning Nanodegree** program.
 
-# Installation:
+## 📖 About
 
-1. For running this project on your local computer, first make sure you have git by typing `git --version` on cmd, if version number appears that means you have git installed. Go ahead and clone the repository:
+In this project, a DCGAN is defined and trained on a dataset of faces. The goal is to get a generator network to generate new images of faces that look as realistic as possible — similar to [thispersondoesnotexist.com](https://www.thispersondoesnotexist.com/).
 
-```
-git clone https://github.com/Sidrah-Madiha/Project-Face-Generation-Udacity.git
-cd Project-Face-Generation-Udacity
+The trained generator produces fairly realistic faces with small amounts of noise.
 
-```
-2. Now please open the file with filename: dlnd_face_generation.ipynb
+## ✨ Features
 
+- 🧠 **DCGAN Architecture** — Deep Convolutional GAN for face generation
+- 🎭 **CelebA Dataset** — Trained on celebrity face images
+- 📓 **Full Notebook** — Complete training pipeline with visualizations
+- ✅ **Unit Tests** — Included for model validation
 
-# Dependencies:
+## 🚀 Getting Started
 
-- Make sure to create an environment for running this project using conda (you can install [Miniconda](http://conda.pydata.org/miniconda.html) for this
+### Installation
 
-- Once you have Miniconda installed, please make an environment for the project like so: 
-```
+```bash
+git clone https://github.com/Sanjays2402/Generate-Faces.git
+cd Generate-Faces
 conda create --name face_generation python=3.6
-activate face_generation
-
-```
-- Install Pytorch: 
-```
+conda activate face_generation
 conda install pytorch -c pytorch
 pip install torchvision
+pip install -r requirements.txt
 ```
 
-- Install a few required pip packages, which are specified in the requirements text file.
+### Run
 
-`pip install -r requirements.txt`
+Open `dlnd_face_generation.ipynb` in Jupyter Notebook.
+
+## 📁 Project Structure
+
+```
+├── dlnd_face_generation.ipynb   # Main training notebook
+├── dlnd_face_generation.html    # Exported notebook
+├── problem_unittests.py         # Unit tests
+└── requirements.txt             # Dependencies
+```
+
+## 👤 Author
+
+**Sanjay Santhanam**
+
+---
+
+⭐ Star this repo if you found it useful!
